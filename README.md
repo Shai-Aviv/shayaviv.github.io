@@ -1,1 +1,0 @@
-# shayaviv.github.io
