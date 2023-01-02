@@ -23,7 +23,9 @@ shortest shell quoting for an input string, while breaking ties by:
    - `'c d'` is preferable to `c' d'`
 
 This is obviously a case of a solution looking for a problem. So let's find a problem for it to
-solve. I have a `tmux` session named "Work stuff" that I want to attach to. Any of these command
+solve.
+
+Say I have a `tmux` session named "Work stuff" that I want to attach to. Any of these commands
 would work:
 
 * `tmux attach-session -t 'Work stuff'`
