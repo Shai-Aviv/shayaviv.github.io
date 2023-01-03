@@ -131,7 +131,7 @@ minq:
 
 Nice! Did you notice `minq`'s quoting is even shorter than the quoting I did by hand previously?
 
-Here are few additional examples that demonstrate how shell quoting can be shortened:
+Here are a few additional examples that demonstrate how shell quoting can be shortened:
 
 | Raw input string | [`minq`](https://github.com/shayaviv/minq) | `printf.sh` | `set-x.sh` | `shlex-join.py` | 
 |-|-|-|-|-|
