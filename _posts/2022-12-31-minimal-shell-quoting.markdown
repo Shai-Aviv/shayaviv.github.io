@@ -13,7 +13,7 @@ where `print(shlex.quote("'foo'"))` prints `''"'"'foo'"'"''`. I assume this use 
 rare to care about shorter quoting.
 
 Well, making shorter and human-readable shell quoting for unusual inputs is important enough to me,
-so I wrote a command-line tool called [`minq`](https://github.com/shayaviv/minq). It finds the
+so I wrote a command-line tool called [`minq`](https://github.com/Shai-Aviv/minq). It finds the
 shortest shell quoting for an input string, while breaking ties by:
 
 1. Preferring single quotes over double quotes, and double quotes over escaping
@@ -133,7 +133,7 @@ Nice! Did you notice `minq`'s quoting is even shorter than the quoting I did by 
 
 Here are a few additional examples that demonstrate how shell quoting can be shortened:
 
-| Raw input string | [`minq`](https://github.com/shayaviv/minq) | `printf.sh` | `set-x.sh` | `shlex-join.py` | 
+| Raw input string | [`minq`](https://github.com/Shai-Aviv/minq) | `printf.sh` | `set-x.sh` | `shlex-join.py` | 
 |-|-|-|-|-|
 | `10$` | `10$` | `10\$` |  `'10$'` | `'10$'` |
 | `$('foo bar')` | `"\$('foo bar')"` | `\$\(\'foo\ bar\'\)` | `'$('\''foo bar'\'')'` | `'$('"'"'foo bar'"'"')'` |
